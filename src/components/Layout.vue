@@ -1,22 +1,4 @@
-Skip to content
-Sign up
-platzi
-/
-practico-vue
-Public
-Code
-Issues
-Pull requests
-Actions
-Projects
-Security
-Insights
-practico-vue/src/components/Layout.vue
-@nerddiana
-nerddiana Resume
- History
- 1 contributor
-74 lines (66 sloc)  1.19 KB
+
 <template>
 <div class="header">
     <slot name="header"></slot>

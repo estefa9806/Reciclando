@@ -5,7 +5,17 @@
       <form @submit.prevent="submit">
         <div class="field">
           <label>Nombre del reciclaje:</label>
-          <input type="text" v-model="nombreResiduo" />
+          <select  v-model="nombreResiduo">
+            <option disabled value="">Seleccione uno</option>
+            <option value="aceite">Aceite usado</option>
+            <option value="pilas">Baterias</option>
+            <option value="botellas">Botellas/plastico</option>
+            <option value="botellasEco">Botellas Ecologicas</option>
+            <option value="vidrio">Vidrio</option>
+            <option value="latas">Latas</option>
+            <option value="carton">Papel y cartón</option>
+          </select>
+          <!--<input type="text" v-model="nombreResiduo" />-->
         </div>
         <div class="field">
           <label>Monto</label>
@@ -42,11 +52,11 @@ const submit = () => {
     descripcion: descripcion,
     amount: amount.value,
     time: new Date(),
-    
+
   });
-  nombreResiduo.value="";
-  descripcion.value="";
-  amount.value="";
+  nombreResiduo.value = "";
+  descripcion.value = "";
+  amount.value = "";
 
 };
 </script>
@@ -83,7 +93,7 @@ label {
   margin-bottom: 8px;
 }
 
-input,
+input,select,
 textarea {
   font-size: 1.24rem;
   border: 2px solid var(--brand-blue);

@@ -7,13 +7,13 @@
           <label>Nombre del reciclaje: </label>
           <select  v-model="nombreResiduo">
             <option disabled value="">Seleccione uno</option>
-            <option value="aceite">Aceite usado</option>
-            <option value="pilas">Baterias</option>
-            <option value="botellas">Botellas/plastico</option>
-            <option value="botellasEco">Botellas Ecologicas</option>
-            <option value="vidrio">Vidrio</option>
-            <option value="latas">Latas</option>
-            <option value="carton">Papel y cartón</option>
+            <option value="Aceite usado">Aceite usado</option>
+            <option value="Baterias">Baterias</option>
+            <option value="Botellas/plastico">Botellas/plastico</option>
+            <option value="BotellasEco">Botellas Ecologicas</option>
+            <option value="Vidrio">Vidrio</option>
+            <option value="Latas">Latas</option>
+            <option value="papel y carton">Papel y cartón</option>
           </select>
           <!--<input type="text" v-model="nombreResiduo" />-->
         </div>

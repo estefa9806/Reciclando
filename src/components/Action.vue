@@ -4,7 +4,7 @@
     <Modal v-show="showModal" @close="showModal = false">
       <form @submit.prevent="submit">
         <div class="field">
-          <label>Nombre del reciclaje:</label>
+          <label>Nombre del reciclaje: </label>
           <select  v-model="nombreResiduo">
             <option disabled value="">Seleccione uno</option>
             <option value="aceite">Aceite usado</option>
@@ -18,11 +18,11 @@
           <!--<input type="text" v-model="nombreResiduo" />-->
         </div>
         <div class="field">
-          <label>Monto</label>
+          <label>Monto/Bono: </label>
           <input type="number" v-model="amount" />
         </div>
         <div class="field">
-          <label>Descripción</label>
+          <label>Descripción: </label>
           <textarea rows="4" v-model="descripcion"></textarea>
         </div>
         <div class="action">
